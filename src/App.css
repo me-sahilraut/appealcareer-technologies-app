@@ -83,12 +83,11 @@
 
 .flip-card-inner {
   position: relative;
-  width: 100%;
   height: 100%;
   text-align: center;
   transition: transform 0.6s;
   transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  
 }
 
 .flip-card:hover .flip-card-inner {
@@ -101,15 +100,20 @@
   height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  text-align: center;
 }
 
+.shadow-effect{
+  box-shadow: 10px 10px 10px rgba(237, 232, 232, 0.09);
+
+}
 .flip-card-front {
  
   color: black;
 }
 
 .flip-card-back {
-  background-color: #fb5607;
+  background-color: #C256C7;
   color: white;
   transform: rotateY(180deg);
 }
@@ -129,4 +133,51 @@
 
  
   box-shadow: 0 0 10px rgba(0,0,0,.1);
+}
+
+.WhoWeAre-block{
+  border-radius: 4px;
+
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+
+
+ 
+ 
+}
+
+
+.WhoWeAre-block:hover{
+  background-color: #fff;
+  color: black;
+  box-shadow: 0 0 10px rgba(244, 235, 235, 0.1);
+}
+
+
+.LeaderShipCard{
+  border-radius: 4px;
+  background-color: #fff;
+ 
+
+ 
+  box-shadow: 0 0 10px rgba(244, 235, 235, 0.1);
+}
+
+.text-style{
+  font-family: Nunito,sans-serif;
+  font-size: 45px;
+  line-height: 42px;
+  letter-spacing: 0px;
+  color: #C05BC5;
+  text-transform: none;
+  font-weight: 800;
+  font-style: normal;
+}
+
+
+.shadow-block{
+  box-shadow: 0 0 10px rgba(0,0,0,0.09);
+
 }

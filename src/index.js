@@ -14,6 +14,14 @@ import './index.css';
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 
 import HomePage from "./component/HomePage";
+import WhoWeAre from "./component/aboutUs/WhoWeAre";
+import LeadershipTeam from "./component/aboutUs/LeadershipTeam";
+import StrategicAdvisor from "./component/aboutUs/StrategicAdvisor";
+import Footer from "./component/Footer";
+import Service from "./component/Service";
+import Expertise from "./component/Expertise";
+import GetInTouch from "./component/GetInTouch";
+
 
 const AppLayout = () => {
 
@@ -22,6 +30,7 @@ const AppLayout = () => {
       <Provider store={Store}>
         <HomePage />
         <Outlet />
+        <Footer />
       </Provider>
     </div>
   );
@@ -38,9 +47,33 @@ const appRouter = createBrowserRouter([
         element: <Header />,
       },
       {
+        path: "/service",
+        element: <Service />,
+      },
+      {
+        path: "/expertise",
+        element: <Expertise />,
+      },
+      {
+        path: "/getInTouch",
+        element: <GetInTouch />,
+      },
+      {
         path: "/jobListing",
         element: <JobListing />,
-      }
+      },
+      {
+        path: "/whoWeAre",
+        element: <WhoWeAre />,
+      },
+      {
+        path: "/leadershipTeam",
+        element: <LeadershipTeam />
+      },
+      // {
+      //   path: "/strategicAdvisor",
+      //   element: <StrategicAdvisor />
+      // }
     ],
   },
 

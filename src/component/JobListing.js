@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 import { currentOpeningData } from '../mockData/currentOpeningData'
 import CurrentOpening from './CurrentOpening'
 
@@ -30,7 +30,7 @@ const JobListing = () => {
                     Current Openings
                 </h1>
 
-                <div>
+                <div className='mb-[7rem]'>
                     {
                         currentOpeningData.map((val) => (
                             <CurrentOpening key={val.id} post={val.post} location={val.location} experience={val.experience} />
@@ -42,7 +42,8 @@ const JobListing = () => {
 
             {/*Job Listing Body End*/}
 
-            <div className='bg-white mt-10 rounded-lg  shadow-md mb-10 w-[40rem] mx-auto '>
+            {/* <div className='bg-white mt-10 rounded-lg  shadow-md mb-10 w-[40rem] mx-auto ' data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom">
 
 
                 <h1 className='text-[#003459] font-bold text-2xl text-center py-2  '>
@@ -122,7 +123,7 @@ const JobListing = () => {
                     </div>
                 </form>
 
-            </div>
+            </div> */}
         </div>
     )
 }

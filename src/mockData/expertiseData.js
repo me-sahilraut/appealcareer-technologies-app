@@ -1,53 +1,29 @@
 const expertiseData = [
     {
         title: "Information and technology",
-        description: "Hiring professionals for software development, system administration, cybersecurity, and roles across IT sector"
+        description: " Specializing in technology recruitment, Matching top talent with tech roles"
     },
     {
-        title: "Finance and accounting",
-        description: "Finding experts in finance, accounting, auditing, and taxation for financial organizations."
+        title: "Marketing and Media ",
+        description: "Expert recruitment for marketing and media roles, Identifying top talent for innovative campaigns, Connecting skilled professionals with dynamic opportunities"
     },
     {
-        title: "Enginnering",
-        description: "Hiring engineers across various disciplines like civil, mechanical, electrical, and more."
+        title: "BFSI ",
+        description: "Tenured in BFSI talent acquisition, Matching skilled professionals in banking, finance, and insurance, Connecting expertise with industry demands, Strategic recruitment for financial services"
     },
     {
-        title: "sales and marketing ",
-        description: "Recruiting sales representatives, marketers, and branding experts to promote products and services."
+        title: "Performance Management System  ",
+        description: "Our Performance Management System ensures efficiency, Tracking progress, optimizing workforce proficiency, Streamlined evaluations and insightful feedback, Empowering organizations with data-driven insights"
     },
     {
-        title: "Hospitality and tourism ",
-        description: "Finding personnel for hotels, restaurants, travel agencies, and tourism-related businesses"
+        title: "Interview and Panels  ",
+        description: "We offer comprehensive coding assessments, Interview panels for thorough candidate evaluation, Ensuring technical proficiency and suitability, Streamlining recruitment with rigorous evaluations"
     },
     {
-        title: "Energy and Utilities",
-        description: "Hiring professionals in energy production, distribution, and utilities management"
+        title: "Training and Placement ",
+        description: "We offer comprehensive training programs, Certification to validate acquired skills, Securing placements in esteemed roles, Empowering career paths with expertise        "
     },
-    {
-        title: "Telecommunactions",
-        description: "Recruiting individuals for roles in telecom companies, including network engineers,customer service, and sales"
-    },
-    {
-        title: "Logistic and supply chain",
-        description: "Finding experts in logistics, transportation, and supply chain management"
-    },
-    {
-        title: "Media and Entertainment",
-        description: "Hiring creative professionals, editors, graphic designers and content creators."
-    },
-    {
-        title: "Automotive",
-        description: "Recruiting engineers, technicians, and workers for the automotive industry"
-    },
-    {
-        title: "manufacturing",
-        description: "Manufacturing is defined as the creation of new products, either from raw materials or components"
 
-    },
-    {
-        title: "FMGC",
-        description: "Fast-moving consumer goods (FMCG), also known as consumer packaged goods (CPG), are products that are sold quickly "
-    },
 
 ]
 
