@@ -1,17 +1,17 @@
 import React from 'react'
-// import image from '../../asset/female-user.jpeg'
-import { FcBusinesswoman } from "react-icons/fc";
+import image from '../../asset/Leader.jpeg'
+// import { FcBusinesswoman } from "react-icons/fc";
 // import { FcBusinessman } from "react-icons/fc";
 const LeadershipCard = (props) => {
     return (
-        <div className='LeaderShipCard  lg:w-[27%] w-[32%] shadow-block  '>
-            <div className='bg-gray-500 space-y-4 pb-9'>
+        <div className=' relative LeaderShipCard  lg:w-[18%] w-[32%] lg:h-[19rem] shadow-block    drop-shadow-lg  '>
+            <div className=' space-y-4 pb-9 '>
 
-                <FcBusinesswoman className='lg:h-[17rem]  w-full ' />
+                <img src={image} alt='LeaderImage' className='lg:h-[19 rem]  w-full ' />
 
-                <div className='mx-5 space-y-1  text-center '>
+                <div className='absolute bottom-0 px-5 space-y-1   w-full '>
 
-                    <h1 className='text-xl font-serif font-bold uppercase text-white'>{props.name}</h1>
+                    <h1 className='text-lg  font-bold uppercase text-white'>{props.name}</h1>
                     <h2 className='text-lg font-semibold text-white '>{props.position}</h2>
 
 

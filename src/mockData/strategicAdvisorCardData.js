@@ -1,8 +1,8 @@
-import image1 from "../asset/rajat.webp"
+import advisorImg from "../asset/Advisor.jpeg"
 export const AdvisorCardData = [
     {
         id: "1",
-        img: { image1 },
+        img: { advisorImg },
         name: "Chirag Jot",
         position: "Principal Co-founder",
         // skill1: "Cloud, Mobile & Big data Expertise",

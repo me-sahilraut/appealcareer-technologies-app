@@ -21,32 +21,32 @@ const GetInTouch = () => {
                         <MdEmail className='w-[4rem] h-[3rem]' />
                         <div>
                             <h1 className='text-2xl'>Email US</h1>
-                            <p>Mail us at hr@growcite.in</p>
+                            <p>Mail us at hr@careeract.in</p>
                         </div>
 
                     </div>
 
-                    <div className='flex space-x-3'>
+                    {/* <div className='flex space-x-3'>
                         <FaPhoneAlt className='w-[4rem] h-[3rem]' />
 
                         <div>
                             <h1 className='text-2xl'>Call US</h1>
                             <p>Mail us at hr@growcite.in</p>
                         </div>
-                    </div>
+                    </div> */}
 
-                    <div className='flex space-x-3'>
+                    {/* <div className='flex space-x-3'>
                         <FaCloudUploadAlt className='w-[4rem] h-[3rem]' />
                         <div>
                             <h1 className='text-2xl'>Uplod Your Resume</h1>
                             <p>Use the <span className='font-bold'>Contact Form</span> to send us a message or ask about our pool of talented candidates.</p>
                         </div>
-                    </div>
+                    </div> */}
                     <div className='flex space-x-3'>
                         <VscListOrdered className='w-[4rem] h-[3rem]' />
                         <div>
                             <h1 className='text-2xl'>See Job Listning</h1>
-                            <p>Mail us at hr@growcite.in</p>
+
                         </div>
                     </div>
 

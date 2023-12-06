@@ -86,15 +86,15 @@ const Navigation = () => {
                         </a>
 
                             {isOpen && (
-                                <div className="bg-white absolute top-[3rem] flex flex-col items-start  p-2 w-full" onMouseLeave={() => setIsOpen(false)}>
+                                <div className="bg-white absolute top-[3rem] flex flex-col items-start  p-2 w-full rounded-md" onMouseLeave={() => setIsOpen(false)}>
                                     {list.map((item, i) => (
                                         <div
                                             className="flex w-full justify-between hover:bg-pink-50 cursor-pointer rounded-r-lg border-l-transparent"
                                             key={i}
                                         >
-                                            <Link to={item.link}><div className='text-left text-[#003459] my-5'>
-                                                <h3 className='font-bold'>{item.title}</h3>
-                                                <p className='font-extralight'>{item.description}</p>
+                                            <Link to={item.link}><div className='text-left text-black my-5'>
+                                                <h3 className='font-bold text-lg'>{item.title}</h3>
+                                                <p className='font-light'>{item.description}</p>
                                             </div></Link >
                                         </div>
                                     ))}
@@ -105,7 +105,7 @@ const Navigation = () => {
                         <li className='text-gray-200 font-medium hover:underline hover:underline-offset-8 cursor-pointer'>
                             <Link to="/service" className="hover:text-[#AC75D2]" aria-current="page" > Our Service</Link>
                         </li>
-                        <li className='text-gray-200 font-medium hover:underline hover:underline-offset-8 cursor-pointer'>    <Link to="expertise" className="hover:text-[#AC75D2]" aria-current="page" > Our Expertise</Link></li>
+                        <li className='text-gray-200 font-medium hover:underline hover:underline-offset-8 cursor-pointer'>    <Link to="/expertise" className="hover:text-[#AC75D2]" aria-current="page" > Our Expertise</Link></li>
                         <li className='text-gray-200 font-medium hover:underline hover:underline-offset-8 cursor-pointer'>
                             <Link to="/jobListing" className='hover:text-[#AC75D2]'>JobListing</Link>  </li>
                         <li className=''>

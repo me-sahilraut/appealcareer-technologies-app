@@ -12,7 +12,7 @@ const Service = () => {
         })
     }, []);
     return (
-        <div className=' bg-[#f9f9f9] pt-10 ' id='Service'>
+        <div className=' bg-[#f9f9f9] pt-10 ' name="service" id='service'>
 
 
             <div className=''>
@@ -36,7 +36,7 @@ const Service = () => {
                     <p className='mt-3 text-[#003459] text-justify text-base   '>Strategic executive search expertise, Unparalleled talent identification, Precise match-making for top-tier roles, Elevating organizations with optimal leadership.</p>
                 </div>
 
-                <div className='  gap-5  shadow-xl border border-black-100  md:w-2/5 mt-16 ml-10 mx-5 os-block-2 ' data-aos="fade-left">
+                <div className='  gap-5  shadow-xl border border-black-100  md:w-2/5 mt-16 ml-10 mx-5 os-block-2 ' data-aos="fade-right">
                     <h1 className='  text-[#003459] font-bold mt-5 text-xl'>Permanent Hiring</h1>
                     <p className='mt-3 text-[#003459] text-justify text-base   '>Permanent hiring expertise, Identifying lasting talent fits, Securing key roles for longevity, Building sustainable workforce foundations.</p>
                 </div>

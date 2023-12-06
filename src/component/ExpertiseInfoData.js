@@ -2,7 +2,7 @@ import React from 'react'
 
 const ExpertiseInfoData = (props) => {
     return (
-        <div className="flip-card  w-[28rem] h-[18rem]   ">
+        <div className="flip-card w-[24rem] h-[20rem] sm:w-[28rem] sm:h-[18rem]   ">
             <div className="flip-card-inner">
                 <div className="flip-card-front bg-white py-10 rounded-md shadow-effect ">
                     <h1 className='text-black font-bold uppercase text-4xl py-[4rem]'>{props.title}</h1>

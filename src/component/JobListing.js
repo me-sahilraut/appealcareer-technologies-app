@@ -1,7 +1,7 @@
 import React from 'react'
 // import { Link } from 'react-router-dom'
-import { currentOpeningData } from '../mockData/currentOpeningData'
-import CurrentOpening from './CurrentOpening'
+// import { currentOpeningData } from '../mockData/currentOpeningData'
+// import CurrentOpening from './CurrentOpening'
 
 
 
@@ -25,18 +25,18 @@ const JobListing = () => {
 
             {/*Job Listing Body Start*/}
 
-            <div className=''>
+            <div className='h-screen'>
                 <h1 className='text-3xl font-bold text-center mt-[5rem] text-[#003459]'>
                     Current Openings
                 </h1>
 
-                <div className='mb-[7rem]'>
+                {/* <div className='mb-[7rem]'>
                     {
                         currentOpeningData.map((val) => (
                             <CurrentOpening key={val.id} post={val.post} location={val.location} experience={val.experience} />
                         ))
                     }
-                </div>
+                </div> */}
 
             </div>
 

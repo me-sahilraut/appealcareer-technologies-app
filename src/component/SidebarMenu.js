@@ -5,8 +5,8 @@ import { useSelector, useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import list from "../mockData/list.json";
-
-
+import { IoMdArrowDropdown } from "react-icons/io";
+import { IoMdArrowDropup } from "react-icons/io";
 const SidebarMenu = () => {
 
     const [isOpen, setIsOpen] = useState(false);
@@ -26,38 +26,52 @@ const SidebarMenu = () => {
         <div className="w-[20rem]   bg-white absolute left-0 top-0 mr-6  ">
             <RxCross2 onClick={() => closeMenuHandler()} className="text-black w-[2rem] h-[2rem] mt-2 ml-4  " />
             <ul className="text-black text-left py-[5rem]  font-bold space-y-2">
+                <div className="flex">
+                    <li className="relative  cursor-pointer ">
 
-                <li className="relative hover:underline hover:underline-offset-8 cursor-pointer">
-                    <Link to="/" id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" className="px-6 text-lg  font-semibold hover:text" onClick={() => setIsOpen((prev) => !prev)}>
-                        About us
+                        <Link to="/" id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" className="" onClick={() => setIsOpen((prev) => !prev)}>
+                            <span className="flex px-6 text-lg  font-bold uppercase hover:text"> About us
+                                {isOpen ?
+                                    <IoMdArrowDropup className="my-1 w-5 h-5" />
+
+                                    :
+                                    <IoMdArrowDropdown className="my-1 w-5 h-5" />
+                                }
+
+                            </span>
 
 
-                        {isOpen && (
-                            <div className="bg-[#caf0f8] absolute top-[3rem]  flex flex-col items-start rounded-lg p-2 w-full">
-                                {list.map((item, i) => (
-                                    <div
-                                        className="flex w-full justify-between hover:bg-pink-50 cursor-pointer rounded-r-lg border-l-transparent"
-                                        key={i}
-                                    >
-                                        <div className='text-left text-[#003459] my-5'>
-                                            <h3 className='font-bold'><Link to={item.link}>{item.title}</Link ></h3>
-                                            <p className='font-extralight'>{item.description}</p>
+                            {isOpen && (
+
+                                <div className="bg-gray-200  top-[1rem]  flex flex-col items-start  p-1 w-full">
+                                    {list.map((item, i) => (
+                                        <div
+                                            className="flex w-full justify-between hover:bg-pink-50 cursor-pointer rounded-r-lg border-l-transparent"
+                                            key={i}
+                                        >
+                                            <div className='text-left text-black my-2 mx-[1rem]'>
+                                                <h3 className=' text-lg  font-bold uppercase' onClick={() => closeMenuHandler()}><Link to={item.link}>{item.title}</Link ></h3>
+
+                                            </div>
                                         </div>
-                                    </div>
-                                ))}
-                            </div>
-                        )}
-                    </Link>
+                                    ))}
+                                </div>
 
-                </li>
-                <li className="hover:underline hover:underline-offset-8 cursor-pointer px-6 text-lg  font-semibold">Our Services</li>
-                <li className="hover:underline hover:underline-offset-8 cursor-pointer px-6 text-lg  font-semibold">Our Expertise</li>
+                            )}
+                        </Link>
+
+
+                    </li>
+
+                </div>
+                <li className="hover:underline hover:underline-offset-8 cursor-pointer px-6 text-lg  font-bold uppercase">Our Services</li>
+                <li className="hover:underline hover:underline-offset-8 cursor-pointer px-6 text-lg  uppercase font-bold">Our Expertise</li>
                 <li className="hover:underline hover:underline-offset-8 cursor-pointer px-6 text-lg  font-semibold">
-                    <Link to="/jobListing">Job Listing</Link></li>
-                <li className="hover:underline hover:underline-offset-8 cursor-pointer px-6 text-lg  font-semibold">Get In Touch</li>
+                    <Link to="/jobListing " className="uppercase font-bold">Job Listing</Link></li>
+                <li className="hover:underline hover:underline-offset-8 cursor-pointer px-6 text-lg   uppercase font-bold">Get In Touch</li>
             </ul>
 
-        </div>
+        </div >
     );
 }
 
